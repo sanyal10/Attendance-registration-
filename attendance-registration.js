@@ -6,7 +6,6 @@ form.addEventListener("submit", function(event) {
 
   // Get the input values from the form
   const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
   const date = new Date().toLocaleDateString();
 
   // Create a new row in the attendance table
@@ -18,7 +17,6 @@ form.addEventListener("submit", function(event) {
 
   // Set the values of the new row cells
   nameCell.innerHTML = name;
-  emailCell.innerHTML = email;
   dateCell.innerHTML = date;
 
   // Reset the form
